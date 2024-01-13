@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.wpbrewery.mms</groupId>
-	<artifactId>walterpenk-api</artifactId>
+	<artifactId>walterpenk</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>walterpenk-api</name>
 	<description>API REST for Walterpenk Brewery</description>

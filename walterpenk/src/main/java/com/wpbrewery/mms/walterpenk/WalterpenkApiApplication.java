@@ -1,4 +1,4 @@
-package com.wpbrewery.mms.walterpenkapi;
+package com.wpbrewery.mms.walterpenk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
