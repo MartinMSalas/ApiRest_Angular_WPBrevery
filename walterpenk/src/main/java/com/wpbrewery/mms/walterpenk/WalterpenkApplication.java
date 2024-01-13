@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WalterpenkApiApplication {
+public class WalterpenkApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WalterpenkApiApplication.class, args);
+		SpringApplication.run(WalterpenkApplication.class, args);
 	}
 
 }
