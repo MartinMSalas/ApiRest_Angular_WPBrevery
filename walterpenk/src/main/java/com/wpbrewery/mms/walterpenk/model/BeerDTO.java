@@ -2,6 +2,7 @@ package com.wpbrewery.mms.walterpenk.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Builder;
 import lombok.Data;
 
@@ -16,11 +17,13 @@ public class BeerDTO {
     private Integer version;
     @NotBlank
     @NotNull
+    @Size(max=50, message = "Beer name must be less than or equal to 50 characters")
     private String beerName;
     @NotNull
     private BeerStyle beerStyle;
     @NotBlank
     @NotNull
+    @Size(max=255)
     private String upc;
     private Integer quantityOnHand;
     @NotNull
