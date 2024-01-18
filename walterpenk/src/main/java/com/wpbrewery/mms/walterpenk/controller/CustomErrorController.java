@@ -1,5 +1,6 @@
 package com.wpbrewery.mms.walterpenk.controller;
 
+import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.TransactionSystemException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -16,7 +17,20 @@ public class CustomErrorController {
 
     @ExceptionHandler
     ResponseEntity handleJPAViolations(TransactionSystemException exception){
-        return ResponseEntity.badRequest().build();
+        ResponseEntity.BodyBuilder  responseEntity = ResponseEntity.badRequest();
+
+        if(exception.getCause().getCause() instanceof ConstraintViolationException){
+            ConstraintViolationException ve = (ConstraintViolationException) exception.getCause().getCause();
+            List errorList = ve.getConstraintViolations().stream()
+                    .map(constraintViolation -> {
+                        Map<String, String> errorMap = new HashMap<>();
+                        errorMap.put("property", constraintViolation.getPropertyPath().toString());
+                        errorMap.put("message", constraintViolation.getMessage());
+                        return errorMap;
+                    }).collect(Collectors.toList());
+            return responseEntity.body(errorList);
+        }
+        return responseEntity.build();
     }
     @ExceptionHandler(MethodArgumentNotValidException.class)
     ResponseEntity handleBindErros(MethodArgumentNotValidException e){

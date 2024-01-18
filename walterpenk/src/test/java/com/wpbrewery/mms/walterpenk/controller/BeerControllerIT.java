@@ -5,7 +5,7 @@ import com.wpbrewery.mms.walterpenk.entity.Beer;
 import com.wpbrewery.mms.walterpenk.mappers.BeerMapper;
 import com.wpbrewery.mms.walterpenk.model.BeerDTO;
 import com.wpbrewery.mms.walterpenk.repository.BeerRepository;
-import jakarta.transaction.Transactional;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +21,31 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.util.*;
 
+
+
+
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.annotation.Rollback;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.annotation.Rollback;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.UUID;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -54,10 +77,9 @@ class BeerControllerIT {
     void testPatchBeerBadName() throws Exception {
         Beer beer = beerRepository.findAll().get(0);
 
-
         Map<String, Object> beerMap = new HashMap<>();
-        beerMap.put("beerName", "New Name 12345678901234567890123456789012345678901234567890");
-
+        beerMap.put("beerName", "1234567890123456789012345678901234567890123456789012345678901234567890");
+        System.out.println(beerMap.size());
         mockMvc.perform(patch(BeerController.BEER_PATH_ID, beer.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON)

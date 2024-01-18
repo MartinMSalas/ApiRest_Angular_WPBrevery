@@ -92,7 +92,23 @@ public class BeerServiceJPA implements BeerService {
     }
 
     @Override
-    public void patchBeerById(UUID beerId, BeerDTO beer) {
-
+    public Optional<BeerDTO> patchBeerById(UUID beerId, BeerDTO beer) {
+        AtomicReference<Optional<BeerDTO>> updatedBeer = new AtomicReference<>();
+        beerRepository.findById(beerId).ifPresentOrElse(beerToUpdate ->{
+                    if(beer.getBeerName() != null)
+                        beerToUpdate.setBeerName(beer.getBeerName());
+                    if(beer.getBeerStyle() != null)
+                        beerToUpdate.setBeerStyle(beer.getBeerStyle());
+                    if(beer.getQuantityOnHand() != null)
+                        beerToUpdate.setQuantityOnHand(beer.getQuantityOnHand());
+                    if(beer.getPrice() != null)
+                        beerToUpdate.setPrice(beer.getPrice());
+                    if(beer.getUpc() != null)
+                        beerToUpdate.setUpc(beer.getUpc());
+                    updatedBeer.set(Optional.of(beerMapper.beerToBeerDTO(beerRepository.save(beerToUpdate))));
+                },
+                ()->{updatedBeer.set(Optional.empty());}
+        );
+        return updatedBeer.get();
     }
 }
