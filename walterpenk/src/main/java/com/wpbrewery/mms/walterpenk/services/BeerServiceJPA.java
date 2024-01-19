@@ -1,5 +1,6 @@
 package com.wpbrewery.mms.walterpenk.services;
 
+import com.wpbrewery.mms.walterpenk.entity.Beer;
 import com.wpbrewery.mms.walterpenk.mappers.BeerMapper;
 import com.wpbrewery.mms.walterpenk.model.BeerDTO;
 import com.wpbrewery.mms.walterpenk.repository.BeerRepository;
@@ -105,7 +106,8 @@ public class BeerServiceJPA implements BeerService {
                         beerToUpdate.setPrice(beer.getPrice());
                     if(beer.getUpc() != null)
                         beerToUpdate.setUpc(beer.getUpc());
-                    updatedBeer.set(Optional.of(beerMapper.beerToBeerDTO(beerRepository.save(beerToUpdate))));
+                    Beer beerSaved = beerRepository.save(beerToUpdate);
+                    updatedBeer.set(Optional.of(beerMapper.beerToBeerDTO(beerSaved)));
                 },
                 ()->{updatedBeer.set(Optional.empty());}
         );

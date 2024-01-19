@@ -26,7 +26,7 @@ public class Beer {
     private Integer version;
     @NotBlank
     @NotNull
-    @Size(max=50)
+    @Size(max=50, message = "Beer name must be less than or equal to 50 characters")
     @Column(length=50)
     private String beerName;
     @NotNull
