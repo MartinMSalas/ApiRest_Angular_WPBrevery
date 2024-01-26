@@ -8,7 +8,7 @@ import org.hibernate.type.SqlTypes;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
-import org.hibernate.type.descriptor.sql.CharTypeDescriptor;
+
 
 @Getter
 @Setter
@@ -21,7 +21,7 @@ public class Customer {
     @Id
     @GeneratedValue(generator = "org.hibernate.id.UUIDGenerator")
     @Column(length = 36, columnDefinition = "varchar(36)", updatable = false, nullable = false)
-    @JdbcType(CharTypeDescriptor.class)
+
     private UUID id;
     private String name;
     @Version
