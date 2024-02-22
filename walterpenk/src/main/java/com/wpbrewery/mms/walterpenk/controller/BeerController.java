@@ -1,6 +1,7 @@
 package com.wpbrewery.mms.walterpenk.controller;
 
 import com.wpbrewery.mms.walterpenk.model.BeerDTO;
+import com.wpbrewery.mms.walterpenk.model.BeerStyle;
 import com.wpbrewery.mms.walterpenk.services.BeerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -75,9 +76,14 @@ public class BeerController {
     }
 
     @GetMapping(value = BEER_PATH)
-    public List<BeerDTO> listBeers(){
-        return beerService.listBeers();
+    public List<BeerDTO> listBeers(@RequestParam(value = "beerName", required = false) String beerName,
+                                    @RequestParam(value = "beerStyle", required = false) BeerStyle beerStyle,
+                                    @RequestParam(value = "showInventoryOnHand", required = false) Boolean showInventoryOnHand){
+
+
+        return beerService.listBeers(beerName, beerStyle, showInventoryOnHand);
     }
+
 
 
     @GetMapping(value = BEER_PATH_ID)
