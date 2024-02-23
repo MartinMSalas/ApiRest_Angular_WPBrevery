@@ -4,12 +4,12 @@ import com.wpbrewery.mms.walterpenk.bootstrap.BootstrapData;
 import com.wpbrewery.mms.walterpenk.entity.Beer;
 import com.wpbrewery.mms.walterpenk.model.BeerStyle;
 import com.wpbrewery.mms.walterpenk.services.BeerCsvServiceImpl;
-import com.wpbrewery.mms.walterpenk.services.BeerServiceImpl;
 import jakarta.validation.ConstraintViolationException;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;
+import org.springframework.data.domain.Page;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -27,9 +27,9 @@ class BeerRepositoryTest {
 
     @Test
     void testGetBeerListByName(){
-        List<Beer> list = beerRepository.findAllByBeerNameIsLikeIgnoreCase("%IPA%");
+        Page<Beer> list = beerRepository.findAllByBeerNameIsLikeIgnoreCase("%IPA%", null);
         //System.out.println(list.size());
-        assertThat(list.size()).isGreaterThan(30);
+        assertThat(list.getContent().size()).isGreaterThan(30);
     }
 
     @Test

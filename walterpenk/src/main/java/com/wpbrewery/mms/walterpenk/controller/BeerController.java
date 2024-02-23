@@ -5,13 +5,13 @@ import com.wpbrewery.mms.walterpenk.model.BeerStyle;
 import com.wpbrewery.mms.walterpenk.services.BeerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -76,12 +76,14 @@ public class BeerController {
     }
 
     @GetMapping(value = BEER_PATH)
-    public List<BeerDTO> listBeers(@RequestParam(value = "beerName", required = false) String beerName,
-                                    @RequestParam(value = "beerStyle", required = false) BeerStyle beerStyle,
-                                    @RequestParam(value = "showInventoryOnHand", required = false) Boolean showInventoryOnHand){
+    public Page<BeerDTO> listBeers(@RequestParam(value = "beerName", required = false) String beerName,
+                                   @RequestParam(value = "beerStyle", required = false) BeerStyle beerStyle,
+                                   @RequestParam(value = "showInventoryOnHand", required = false) Boolean showInventoryOnHand,
+                                   @RequestParam(value = "pageNumber", required = false) Integer pageNumber,
+                                   @RequestParam(value = "pageSize", required = false) Integer pageSize){
 
 
-        return beerService.listBeers(beerName, beerStyle, showInventoryOnHand);
+        return beerService.listBeers(beerName, beerStyle, showInventoryOnHand, pageNumber, pageSize);
     }
 
 
