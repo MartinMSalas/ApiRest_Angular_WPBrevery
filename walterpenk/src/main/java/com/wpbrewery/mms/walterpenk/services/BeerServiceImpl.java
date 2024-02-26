@@ -101,6 +101,7 @@ public class BeerServiceImpl implements BeerService {
     @Override
     public Optional<BeerDTO> updateBeerById(UUID beerId, BeerDTO beer) {
 
+
         BeerDTO existing = beerMap.get(beerId);
         if(existing == null){
             return Optional.empty();
