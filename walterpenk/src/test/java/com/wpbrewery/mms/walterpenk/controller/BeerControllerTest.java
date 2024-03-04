@@ -3,6 +3,7 @@ package com.wpbrewery.mms.walterpenk.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wpbrewery.mms.walterpenk.model.BeerDTO;
+import com.wpbrewery.mms.walterpenk.model.BeerStyle;
 import com.wpbrewery.mms.walterpenk.services.BeerService;
 import com.wpbrewery.mms.walterpenk.services.BeerServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,13 +13,19 @@ import org.mockito.Captor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.core.Is.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -32,6 +39,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 @WebMvcTest(BeerController.class)
+@TestPropertySource("classpath:application-test.properties")
 public class BeerControllerTest {
 
 
@@ -57,6 +65,28 @@ public class BeerControllerTest {
         beerServiceImpl = new BeerServiceImpl();
     }
 
+    @Test
+    void testListBeers() throws Exception {
+
+/*
+        PageImpl page = new PageImpl<>(myArraylist);
+
+        by
+        Pageable pageable = PageRequest.of(0, 10);
+        PageImpl page = new PageImpl<>(myArraylist, pageable, myArraylist.size());
+*/
+
+        Page<BeerDTO> beerDTOPage = beerServiceImpl.listBeers(null, null,null, 1, 25);
+        given(beerService.listBeers(any(), any(),any(), any(), any()))
+                .willReturn(beerDTOPage);
+        mockMvc.perform(get("/api/v1/beer2")
+                        .param("pageNumber", "1")
+                        .param("pageSize", "25")
+                        .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                //.andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.content.length()", is(11)));
+    }
     @Test
     void testPatchBeer() throws Exception {
         BeerDTO beer = beerServiceImpl.listBeers(null, null,false, 1, 25).getContent().get(0);
@@ -123,7 +153,8 @@ public class BeerControllerTest {
     void testCreateBeerNullBeerName() throws Exception {
         BeerDTO beerDTO = BeerDTO.builder().build();
 
-        given(beerService.saveNewBeer(any(BeerDTO.class))).willReturn(beerServiceImpl.listBeers(null, null,false, 1, 25).getContent().get(1));        MvcResult mvcResult = mockMvc.perform(post(BeerController.BEER_PATH)
+        given(beerService.saveNewBeer(any(BeerDTO.class))).willReturn(beerServiceImpl.listBeers(null, null,false, 1, 25).getContent().get(1));
+        MvcResult mvcResult = mockMvc.perform(post(BeerController.BEER_PATH)
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(beerDTO)))
@@ -132,17 +163,59 @@ public class BeerControllerTest {
                 .andReturn();
         System.out.println(mvcResult.getResponse().getContentAsString());
     }
-    @Test
-    void testListBeers() throws Exception {
-        given(beerService.listBeers(any(), any(),any(), any(), any())).willReturn(beerServiceImpl.listBeers(null, null,false, 1, 25));
 
+    @Test
+    void testListBeers2() throws Exception {
+        // Given
+        List<BeerDTO> beerList = Arrays.asList(
+                BeerDTO.builder()
+                        .id(UUID.randomUUID())
+                        .version(1)
+                        .beerName("Beer Name 1")
+                        .beerStyle(BeerStyle.PALE_ALE)
+                        .upc("123456789")
+                        .price(new BigDecimal("10.99"))
+                        .quantityOnHand(100)
+                        .createdDate(LocalDateTime.now())
+                        .updateDate(LocalDateTime.now())
+                        .build(),
+                BeerDTO.builder()
+                        .id(UUID.randomUUID())
+                        .version(1)
+                        .beerName("Beer Name 2")
+                        .beerStyle(BeerStyle.IPA)
+                        .upc("987654321")
+                        .price(new BigDecimal("12.99"))
+                        .quantityOnHand(200)
+                        .createdDate(LocalDateTime.now())
+                        .updateDate(LocalDateTime.now())
+                        .build(),
+                BeerDTO.builder()
+                        .id(UUID.randomUUID())
+                        .version(1)
+                        .beerName("Beer Name 3")
+                        .beerStyle(BeerStyle.LAGER)
+                        .upc("1122334455")
+                        .price(new BigDecimal("11.99"))
+                        .quantityOnHand(150)
+                        .createdDate(LocalDateTime.now())
+                        .updateDate(LocalDateTime.now())
+                        .build()
+        );
+
+        Page<BeerDTO> beerPage = new PageImpl<>(beerList);
+        Page<BeerDTO> beerPage2 = beerServiceImpl.listBeers(null, null, false, 1, 25);
+
+        given(beerService.listBeers(any(), any(), any(), any(), any())).willReturn(beerPage);
+
+        // When & Then
         mockMvc.perform(get(BeerController.BEER_PATH)
                         .accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.length()", is(3)));
-    }
+                    .andExpect(status().isOk())
+                    .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                    .andExpect(jsonPath("$.content", hasSize(25)));
 
+    }
     @Test
     void getBeerById() throws Exception {
         BeerDTO testBeer = beerServiceImpl.listBeers(null, null,false, 1, 25).getContent().get(0);
