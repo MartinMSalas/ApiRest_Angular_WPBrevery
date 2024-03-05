@@ -1,0 +1,364 @@
+2024-03-03T08:33:51.895-03:00  INFO 3991 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 3991 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:33:51.898-03:00 DEBUG 3991 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:33:51.899-03:00  INFO 3991 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:33:52.632-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:52.633-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:52.634-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:33:52.652-03:00  INFO 3991 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.989 seconds (process running for 2.167)
+2024-03-03T08:33:52.808-03:00  WARN 3991 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:33:52.818-03:00 DEBUG 3991 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:33:52.846-03:00  WARN 3991 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:33:52.897-03:00 DEBUG 3991 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:33:52.976-03:00  INFO 3991 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.WalterpenkApplicationTests]: WalterpenkApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:33:52.980-03:00  INFO 3991 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.WalterpenkApplicationTests
+2024-03-03T08:33:52.984-03:00  INFO 3991 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:33:52.998-03:00  INFO 3991 --- [main] c.w.m.w.WalterpenkApplicationTests       : Starting WalterpenkApplicationTests using Java 17.0.9 with PID 3991 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:33:52.998-03:00 DEBUG 3991 --- [main] c.w.m.w.WalterpenkApplicationTests       : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:33:52.998-03:00  INFO 3991 --- [main] c.w.m.w.WalterpenkApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:33:53.200-03:00  INFO 3991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-03T08:33:53.223-03:00  INFO 3991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2024-03-03T08:33:53.371-03:00  INFO 3991 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-03T08:33:53.479-03:00  INFO 3991 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8a7d9779-9579-49d7-b550-accd4e7deaf8 user=SA
+2024-03-03T08:33:53.480-03:00  INFO 3991 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-03T08:33:53.505-03:00  INFO 3991 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-03T08:33:53.540-03:00  INFO 3991 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-03-03T08:33:53.560-03:00  INFO 3991 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-03T08:33:53.626-03:00  INFO 3991 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-03T08:33:54.067-03:00  INFO 3991 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-03T08:33:54.090-03:00  INFO 3991 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:33:54.392-03:00  WARN 3991 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-03T08:33:54.510-03:00  INFO 3991 --- [main] c.w.m.w.WalterpenkApplicationTests       : Started WalterpenkApplicationTests in 1.526 seconds (process running for 4.026)
+2024-03-03T08:33:55.203-03:00  INFO 3991 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.controller.BeerControllerIT]: BeerControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:33:55.204-03:00  INFO 3991 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.controller.BeerControllerIT
+2024-03-03T08:33:55.209-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.209-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.210-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:33:55.305-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.305-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.306-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:33:55.316-03:00  WARN 3991 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:33:55.322-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.322-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.323-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:33:55.330-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.330-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.331-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:33:55.334-03:00  WARN 3991 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:33:55.337-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.337-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.338-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:33:55.368-03:00 DEBUG 3991 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:33:55.372-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.373-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.373-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:55.373-03:00 DEBUG 3991 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:33:55.377-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.377-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.377-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:55.404-03:00 DEBUG 3991 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:33:55.409-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.409-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.409-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:55.411-03:00  WARN 3991 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:33:55.414-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.414-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.414-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:55.455-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.455-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.455-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:55.457-03:00  WARN 3991 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:33:55.460-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.460-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.460-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:55.464-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.464-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.465-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:33:55.466-03:00  WARN 3991 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:33:55.468-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.469-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.469-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:55.470-03:00  WARN 3991 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:33:55.473-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:55.473-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:55.473-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:55.478-03:00  INFO 3991 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.repository.CustomerRepositoryTest]: CustomerRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:33:55.486-03:00  INFO 3991 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.repository.CustomerRepositoryTest
+2024-03-03T08:33:55.488-03:00  INFO 3991 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:33:55.499-03:00  INFO 3991 --- [main] c.w.m.w.r.CustomerRepositoryTest         : Starting CustomerRepositoryTest using Java 17.0.9 with PID 3991 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:33:55.500-03:00 DEBUG 3991 --- [main] c.w.m.w.r.CustomerRepositoryTest         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:33:55.500-03:00  INFO 3991 --- [main] c.w.m.w.r.CustomerRepositoryTest         : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:33:55.541-03:00  INFO 3991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-03T08:33:55.547-03:00  INFO 3991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2024-03-03T08:33:55.554-03:00  INFO 3991 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-03-03T08:33:55.565-03:00  INFO 3991 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:bd16b660-f578-4e37-98d5-2775304299e1;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-03-03T08:33:55.576-03:00  INFO 3991 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-03T08:33:55.577-03:00  INFO 3991 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-03T08:33:55.579-03:00  INFO 3991 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-03T08:33:55.617-03:00  INFO 3991 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-03T08:33:55.620-03:00  INFO 3991 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:33:55.666-03:00  INFO 3991 --- [main] c.w.m.w.r.CustomerRepositoryTest         : Started CustomerRepositoryTest in 0.179 seconds (process running for 5.181)
+2024-03-03T08:33:55.672-03:00  INFO 3991 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.repository.BeerRepositoryTest]: BeerRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:33:55.677-03:00  INFO 3991 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.repository.BeerRepositoryTest
+2024-03-03T08:33:55.679-03:00  INFO 3991 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:33:55.689-03:00  INFO 3991 --- [main] c.w.m.w.repository.BeerRepositoryTest    : Starting BeerRepositoryTest using Java 17.0.9 with PID 3991 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:33:55.690-03:00 DEBUG 3991 --- [main] c.w.m.w.repository.BeerRepositoryTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:33:55.690-03:00  INFO 3991 --- [main] c.w.m.w.repository.BeerRepositoryTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:33:55.726-03:00  INFO 3991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-03T08:33:55.731-03:00  INFO 3991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2024-03-03T08:33:55.737-03:00  INFO 3991 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-03-03T08:33:55.743-03:00  INFO 3991 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:a1466916-3f53-4b2c-9f37-f81c9fe25cee;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-03-03T08:33:55.752-03:00  INFO 3991 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-03T08:33:55.753-03:00  INFO 3991 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-03T08:33:55.754-03:00  INFO 3991 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-03T08:33:55.790-03:00  INFO 3991 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-03T08:33:55.793-03:00  INFO 3991 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:33:55.834-03:00  INFO 3991 --- [main] c.w.m.w.repository.BeerRepositoryTest    : Started BeerRepositoryTest in 0.156 seconds (process running for 5.349)
+2024-03-03T08:33:56.272-03:00  INFO 3991 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.controller.CustomerControllerTest]: CustomerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:33:56.275-03:00  INFO 3991 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.controller.CustomerControllerTest
+2024-03-03T08:33:56.277-03:00  INFO 3991 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:33:56.286-03:00  INFO 3991 --- [main] c.w.m.w.c.CustomerControllerTest         : Starting CustomerControllerTest using Java 17.0.9 with PID 3991 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:33:56.287-03:00 DEBUG 3991 --- [main] c.w.m.w.c.CustomerControllerTest         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:33:56.287-03:00  INFO 3991 --- [main] c.w.m.w.c.CustomerControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:33:56.401-03:00  INFO 3991 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:33:56.401-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:33:56.401-03:00  INFO 3991 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:33:56.403-03:00  INFO 3991 --- [main] c.w.m.w.c.CustomerControllerTest         : Started CustomerControllerTest in 0.126 seconds (process running for 5.919)
+2024-03-03T08:33:56.435-03:00  INFO 3991 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.bootstrap.BootstrapDataTest]: BootstrapDataTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:33:56.440-03:00  INFO 3991 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.bootstrap.BootstrapDataTest
+2024-03-03T08:33:56.442-03:00  INFO 3991 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:33:56.450-03:00  INFO 3991 --- [main] c.w.m.w.bootstrap.BootstrapDataTest      : Starting BootstrapDataTest using Java 17.0.9 with PID 3991 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:33:56.451-03:00 DEBUG 3991 --- [main] c.w.m.w.bootstrap.BootstrapDataTest      : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:33:56.451-03:00  INFO 3991 --- [main] c.w.m.w.bootstrap.BootstrapDataTest      : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:33:56.478-03:00  INFO 3991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-03T08:33:56.483-03:00  INFO 3991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2024-03-03T08:33:56.490-03:00  INFO 3991 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-03-03T08:33:56.495-03:00  INFO 3991 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:05e268d6-9eac-4d43-a2ea-8bfe90c9581d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-03-03T08:33:56.503-03:00  INFO 3991 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-03T08:33:56.504-03:00  INFO 3991 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-03T08:33:56.505-03:00  INFO 3991 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-03T08:33:56.533-03:00  INFO 3991 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-03T08:33:56.537-03:00  INFO 3991 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:33:56.573-03:00  INFO 3991 --- [main] c.w.m.w.bootstrap.BootstrapDataTest      : Started BootstrapDataTest in 0.131 seconds (process running for 6.089)
+2024-03-03T08:33:56.862-03:00  INFO 3991 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:33:56.864-03:00  INFO 3991 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-03T08:33:56.865-03:00  INFO 3991 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-03T08:33:56.866-03:00  INFO 3991 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:33:56.867-03:00  INFO 3991 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:33:56.870-03:00  INFO 3991 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:55:52.249-03:00  INFO 8469 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 8469 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:55:52.250-03:00 DEBUG 8469 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:55:52.251-03:00  INFO 8469 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:55:52.962-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:52.963-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:52.964-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:55:52.977-03:00  INFO 8469 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.941 seconds (process running for 2.01)
+2024-03-03T08:55:53.124-03:00  WARN 8469 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:55:53.136-03:00 DEBUG 8469 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:55:53.166-03:00  WARN 8469 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T08:55:53.207-03:00 DEBUG 8469 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:55:53.286-03:00  INFO 8469 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.WalterpenkApplicationTests]: WalterpenkApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:55:53.291-03:00  INFO 8469 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.WalterpenkApplicationTests
+2024-03-03T08:55:53.294-03:00  INFO 8469 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:55:53.308-03:00  INFO 8469 --- [main] c.w.m.w.WalterpenkApplicationTests       : Starting WalterpenkApplicationTests using Java 17.0.9 with PID 8469 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:55:53.308-03:00 DEBUG 8469 --- [main] c.w.m.w.WalterpenkApplicationTests       : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:55:53.308-03:00  INFO 8469 --- [main] c.w.m.w.WalterpenkApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:55:53.507-03:00  INFO 8469 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-03T08:55:53.532-03:00  INFO 8469 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-03-03T08:55:53.662-03:00  INFO 8469 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-03T08:55:53.764-03:00  INFO 8469 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:0e4210d8-f097-4b4f-8b62-dc047a83c9dd user=SA
+2024-03-03T08:55:53.765-03:00  INFO 8469 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-03T08:55:53.789-03:00  INFO 8469 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-03T08:55:53.817-03:00  INFO 8469 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-03-03T08:55:53.835-03:00  INFO 8469 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-03T08:55:53.889-03:00  INFO 8469 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-03T08:55:54.317-03:00  INFO 8469 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-03T08:55:54.338-03:00  INFO 8469 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:55:54.631-03:00  WARN 8469 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-03T08:55:54.742-03:00  INFO 8469 --- [main] c.w.m.w.WalterpenkApplicationTests       : Started WalterpenkApplicationTests in 1.448 seconds (process running for 3.775)
+2024-03-03T08:55:55.457-03:00  INFO 8469 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.controller.BeerControllerIT]: BeerControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:55:55.458-03:00  INFO 8469 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.controller.BeerControllerIT
+2024-03-03T08:55:55.464-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.464-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.465-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:55:55.542-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.542-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.543-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:55:55.591-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.592-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.592-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:55:55.599-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.600-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.600-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:55:55.629-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.629-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.630-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:55:55.674-03:00 DEBUG 8469 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:55:55.680-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.680-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.681-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:55:55.681-03:00 DEBUG 8469 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:55:55.685-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.685-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.685-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:55:55.719-03:00 DEBUG 8469 --- [main] c.w.m.w.controller.BeerController        : Get Beer by Id, in controller
+2024-03-03T08:55:55.724-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.725-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.725-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:55:55.746-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.747-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.747-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:55:55.792-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.792-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.793-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:55:55.811-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.811-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.811-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:55:55.815-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.815-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.816-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:55:55.830-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.830-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.831-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T08:55:55.844-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:55.844-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:55.844-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:55:55.849-03:00  INFO 8469 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.repository.CustomerRepositoryTest]: CustomerRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:55:55.857-03:00  INFO 8469 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.repository.CustomerRepositoryTest
+2024-03-03T08:55:55.859-03:00  INFO 8469 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:55:55.872-03:00  INFO 8469 --- [main] c.w.m.w.r.CustomerRepositoryTest         : Starting CustomerRepositoryTest using Java 17.0.9 with PID 8469 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:55:55.872-03:00 DEBUG 8469 --- [main] c.w.m.w.r.CustomerRepositoryTest         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:55:55.872-03:00  INFO 8469 --- [main] c.w.m.w.r.CustomerRepositoryTest         : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:55:55.916-03:00  INFO 8469 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-03T08:55:55.922-03:00  INFO 8469 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2024-03-03T08:55:55.931-03:00  INFO 8469 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-03-03T08:55:55.941-03:00  INFO 8469 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:78371b4d-04e6-4286-9d28-8866c9c9ce9c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-03-03T08:55:55.954-03:00  INFO 8469 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-03T08:55:55.956-03:00  INFO 8469 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-03T08:55:55.958-03:00  INFO 8469 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-03T08:55:55.994-03:00  INFO 8469 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-03T08:55:55.996-03:00  INFO 8469 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:55:56.043-03:00  INFO 8469 --- [main] c.w.m.w.r.CustomerRepositoryTest         : Started CustomerRepositoryTest in 0.185 seconds (process running for 5.075)
+2024-03-03T08:55:56.049-03:00  INFO 8469 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.repository.BeerRepositoryTest]: BeerRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:55:56.053-03:00  INFO 8469 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.repository.BeerRepositoryTest
+2024-03-03T08:55:56.055-03:00  INFO 8469 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:55:56.065-03:00  INFO 8469 --- [main] c.w.m.w.repository.BeerRepositoryTest    : Starting BeerRepositoryTest using Java 17.0.9 with PID 8469 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:55:56.065-03:00 DEBUG 8469 --- [main] c.w.m.w.repository.BeerRepositoryTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:55:56.065-03:00  INFO 8469 --- [main] c.w.m.w.repository.BeerRepositoryTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:55:56.102-03:00  INFO 8469 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-03T08:55:56.108-03:00  INFO 8469 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2024-03-03T08:55:56.115-03:00  INFO 8469 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-03-03T08:55:56.120-03:00  INFO 8469 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:955b9a42-b657-4071-9dc5-64739690a33b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-03-03T08:55:56.131-03:00  INFO 8469 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-03T08:55:56.132-03:00  INFO 8469 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-03T08:55:56.134-03:00  INFO 8469 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-03T08:55:56.168-03:00  INFO 8469 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-03T08:55:56.171-03:00  INFO 8469 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:55:56.214-03:00  INFO 8469 --- [main] c.w.m.w.repository.BeerRepositoryTest    : Started BeerRepositoryTest in 0.159 seconds (process running for 5.247)
+2024-03-03T08:55:56.582-03:00  INFO 8469 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.controller.CustomerControllerTest]: CustomerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:55:56.585-03:00  INFO 8469 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.controller.CustomerControllerTest
+2024-03-03T08:55:56.587-03:00  INFO 8469 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:55:56.596-03:00  INFO 8469 --- [main] c.w.m.w.c.CustomerControllerTest         : Starting CustomerControllerTest using Java 17.0.9 with PID 8469 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:55:56.596-03:00 DEBUG 8469 --- [main] c.w.m.w.c.CustomerControllerTest         : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:55:56.596-03:00  INFO 8469 --- [main] c.w.m.w.c.CustomerControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:55:56.712-03:00  INFO 8469 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T08:55:56.712-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T08:55:56.712-03:00  INFO 8469 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T08:55:56.715-03:00  INFO 8469 --- [main] c.w.m.w.c.CustomerControllerTest         : Started CustomerControllerTest in 0.128 seconds (process running for 5.748)
+2024-03-03T08:55:56.749-03:00  INFO 8469 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wpbrewery.mms.walterpenk.bootstrap.BootstrapDataTest]: BootstrapDataTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-03-03T08:55:56.753-03:00  INFO 8469 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.wpbrewery.mms.walterpenk.WalterpenkApplication for test class com.wpbrewery.mms.walterpenk.bootstrap.BootstrapDataTest
+2024-03-03T08:55:56.755-03:00  INFO 8469 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2024-03-03T08:55:56.763-03:00  INFO 8469 --- [main] c.w.m.w.bootstrap.BootstrapDataTest      : Starting BootstrapDataTest using Java 17.0.9 with PID 8469 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T08:55:56.763-03:00 DEBUG 8469 --- [main] c.w.m.w.bootstrap.BootstrapDataTest      : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T08:55:56.763-03:00  INFO 8469 --- [main] c.w.m.w.bootstrap.BootstrapDataTest      : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T08:55:56.790-03:00  INFO 8469 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-03T08:55:56.795-03:00  INFO 8469 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2024-03-03T08:55:56.800-03:00  INFO 8469 --- [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-03-03T08:55:56.805-03:00  INFO 8469 --- [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f3e77f7f-b544-48a8-901a-df445acafcb0;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-03-03T08:55:56.812-03:00  INFO 8469 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-03T08:55:56.814-03:00  INFO 8469 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-03T08:55:56.815-03:00  INFO 8469 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-03T08:55:56.843-03:00  INFO 8469 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-03T08:55:56.846-03:00  INFO 8469 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:55:56.875-03:00  INFO 8469 --- [main] c.w.m.w.bootstrap.BootstrapDataTest      : Started BootstrapDataTest in 0.12 seconds (process running for 5.908)
+2024-03-03T08:55:57.107-03:00  INFO 8469 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:55:57.109-03:00  INFO 8469 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-03T08:55:57.110-03:00  INFO 8469 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-03T08:55:57.111-03:00  INFO 8469 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:55:57.111-03:00  INFO 8469 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T08:55:57.113-03:00  INFO 8469 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-03T09:00:45.415-03:00  INFO 9250 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 9250 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T09:00:45.416-03:00 DEBUG 9250 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T09:00:45.416-03:00  INFO 9250 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T09:00:46.076-03:00  INFO 9250 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T09:00:46.076-03:00  INFO 9250 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T09:00:46.077-03:00  INFO 9250 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T09:00:46.090-03:00  INFO 9250 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.876 seconds (process running for 1.87)
+2024-03-03T09:01:42.806-03:00  INFO 9410 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 9410 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T09:01:42.807-03:00 DEBUG 9410 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T09:01:42.808-03:00  INFO 9410 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T09:01:43.490-03:00  INFO 9410 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T09:01:43.491-03:00  INFO 9410 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T09:01:43.492-03:00  INFO 9410 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T09:01:43.506-03:00  INFO 9410 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.911 seconds (process running for 1.916)
+2024-03-03T09:01:43.614-03:00  WARN 9410 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T09:04:54.161-03:00  INFO 9796 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 9796 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T09:04:54.162-03:00 DEBUG 9796 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T09:04:54.162-03:00  INFO 9796 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T09:04:54.795-03:00  INFO 9796 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T09:04:54.795-03:00  INFO 9796 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T09:04:54.796-03:00  INFO 9796 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T09:04:54.809-03:00  INFO 9796 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.886 seconds (process running for 1.971)
+2024-03-03T09:05:43.794-03:00  WARN 9796 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T09:12:17.684-03:00  INFO 10516 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 10516 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T09:12:17.685-03:00 DEBUG 10516 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T09:12:17.686-03:00  INFO 10516 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T09:12:18.315-03:00  INFO 10516 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T09:12:18.315-03:00  INFO 10516 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T09:12:18.316-03:00  INFO 10516 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T09:12:18.328-03:00  INFO 10516 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.879 seconds (process running for 1.976)
+2024-03-03T09:12:25.515-03:00  WARN 10516 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T09:12:47.870-03:00  INFO 10648 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 10648 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T09:12:47.871-03:00 DEBUG 10648 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T09:12:47.872-03:00  INFO 10648 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T09:12:48.507-03:00  INFO 10648 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T09:12:48.507-03:00  INFO 10648 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T09:12:48.508-03:00  INFO 10648 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T09:12:48.520-03:00  INFO 10648 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.877 seconds (process running for 1.982)
+2024-03-03T09:12:50.575-03:00  WARN 10648 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T10:03:28.894-03:00  INFO 14387 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 14387 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T10:03:28.895-03:00 DEBUG 14387 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T10:03:28.896-03:00  INFO 14387 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T10:03:29.557-03:00  INFO 14387 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T10:03:29.557-03:00  INFO 14387 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T10:03:29.558-03:00  INFO 14387 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T10:03:29.570-03:00  INFO 14387 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.882 seconds (process running for 1.909)
+2024-03-03T10:03:29.672-03:00  WARN 14387 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
+2024-03-03T10:05:15.083-03:00  INFO 14598 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 14598 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T10:05:15.084-03:00 DEBUG 14598 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T10:05:15.085-03:00  INFO 14598 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T10:05:15.740-03:00  INFO 14598 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T10:05:15.741-03:00  INFO 14598 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T10:05:15.741-03:00  INFO 14598 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T10:05:15.754-03:00  INFO 14598 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.87 seconds (process running for 1.896)
+2024-03-03T10:05:59.509-03:00  INFO 14722 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 14722 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T10:05:59.510-03:00 DEBUG 14722 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T10:05:59.510-03:00  INFO 14722 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T10:06:00.179-03:00  INFO 14722 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T10:06:00.180-03:00  INFO 14722 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T10:06:00.181-03:00  INFO 14722 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-03T10:06:00.194-03:00  INFO 14722 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.894 seconds (process running for 1.914)
+2024-03-03T10:39:59.692-03:00  INFO 17323 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 17323 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T10:39:59.693-03:00 DEBUG 17323 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T10:39:59.693-03:00  INFO 17323 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T10:40:00.380-03:00  INFO 17323 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T10:40:00.380-03:00  INFO 17323 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T10:40:00.381-03:00  INFO 17323 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T10:40:00.395-03:00  INFO 17323 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.905 seconds (process running for 1.933)
+2024-03-03T10:40:23.978-03:00  INFO 17483 --- [main] c.w.m.w.controller.BeerControllerTest    : Starting BeerControllerTest using Java 17.0.9 with PID 17483 (started by martin in /home/martin/Developer/Java/Training/SpringGuru/Project/walterpenk)
+2024-03-03T10:40:23.979-03:00 DEBUG 17483 --- [main] c.w.m.w.controller.BeerControllerTest    : Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-03-03T10:40:23.979-03:00  INFO 17483 --- [main] c.w.m.w.controller.BeerControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-03-03T10:40:24.667-03:00  INFO 17483 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-03T10:40:24.667-03:00  INFO 17483 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-03T10:40:24.668-03:00  INFO 17483 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-03T10:40:24.681-03:00  INFO 17483 --- [main] c.w.m.w.controller.BeerControllerTest    : Started BeerControllerTest in 0.915 seconds (process running for 1.965)
+2024-03-03T10:40:24.783-03:00  WARN 17483 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: (was java.lang.UnsupportedOperationException)]
