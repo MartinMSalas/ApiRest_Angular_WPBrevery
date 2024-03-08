@@ -95,6 +95,7 @@ public class BeerController {
                                    @RequestParam(required = false) Boolean showInventory,
                                    @RequestParam(required = false) Integer pageNumber,
                                    @RequestParam(required = false) Integer pageSize){
+
         Page<BeerDTO> beerDTOPage = beerService.listBeers(beerName, beerStyle, showInventory, pageNumber, pageSize);
         return beerDTOPage;
 
