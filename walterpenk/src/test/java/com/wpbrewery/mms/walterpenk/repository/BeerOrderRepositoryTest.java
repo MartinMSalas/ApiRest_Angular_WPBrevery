@@ -36,7 +36,7 @@ class BeerOrderRepositoryTest {
     @Transactional
     void testBeerOrders(){
         BeerOrder beerOrder = BeerOrder.builder()
-                .customerRef("Test order")
+                .customerRef("Test customer")
                 .customer(testCustomer)
                 .build();
 
