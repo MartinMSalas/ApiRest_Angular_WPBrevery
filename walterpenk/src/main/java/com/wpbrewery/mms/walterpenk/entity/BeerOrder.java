@@ -56,7 +56,7 @@ public class BeerOrder {
         this.customer = customer;
         customer.getBeerOrders().add(this);
     }
-
+    @Builder.Default
     @OneToMany(mappedBy = "beerOrder")
     private Set<BeerOrderLine> beerOrderLines = new HashSet<>();
 

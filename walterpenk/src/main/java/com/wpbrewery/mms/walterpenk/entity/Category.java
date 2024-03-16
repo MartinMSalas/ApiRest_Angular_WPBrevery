@@ -48,7 +48,14 @@ public class Category {
             inverseJoinColumns = @JoinColumn(name = "beer_id"))
     private Set<Beer> beers = new HashSet<>();
 
-
+    public void addBeer(Beer beer){
+        this.beers.add(beer);
+        beer.getCategories().add(this);
+    }
+    public void removeBeer(Beer beer){
+        this.beers.remove(beer);
+        beer.getCategories().remove(this);
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -60,6 +67,7 @@ public class Category {
 
         return getDescription() != null ? getDescription().equals(category.getDescription()) : category.getDescription() == null;
     }
+
 
     @Override
     public int hashCode() {
