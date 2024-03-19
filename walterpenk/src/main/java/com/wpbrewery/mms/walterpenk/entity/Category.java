@@ -51,6 +51,7 @@ public class Category {
     public void addBeer(Beer beer){
         this.beers.add(beer);
         beer.getCategories().add(this);
+
     }
     public void removeBeer(Beer beer){
         this.beers.remove(beer);
