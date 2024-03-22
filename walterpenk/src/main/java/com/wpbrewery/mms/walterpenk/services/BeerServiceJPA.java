@@ -32,6 +32,7 @@ public class BeerServiceJPA implements BeerService {
     private static final int DEFAULT_PAGE_SIZE = 25;
     @Override
     public Page<BeerDTO> listBeers(String beerName, BeerStyle beerStyle, Boolean showInventory, Integer pageNumber, Integer pageSize) {
+
         PageRequest pageRequest = buildPageRequest(pageNumber, pageSize);
         Page<Beer> beerPage;
 
