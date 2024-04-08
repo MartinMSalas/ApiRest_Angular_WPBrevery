@@ -168,7 +168,7 @@ public class BeerServiceJPA implements BeerService {
                         beerToUpdate.setBeerStyle(beer.getBeerStyle());
                     if(beer.getQuantityOnHand() != null)
                         beerToUpdate.setQuantityOnHand(beer.getQuantityOnHand());
-                    if(beer.getPrice() != null)
+                    if(beer.getPrice() != null )
                         beerToUpdate.setPrice(beer.getPrice());
                     if(beer.getUpc() != null)
                         beerToUpdate.setUpc(beer.getUpc());
